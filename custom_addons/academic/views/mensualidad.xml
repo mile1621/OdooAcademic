@@ -1,0 +1,51 @@
+<odoo>
+    <record id="view_payment_form" model="ir.ui.view">
+        <field name="name">academic.payment.form</field>
+        <field name="model">academic.payment</field>
+        <field name="arch" type="xml">
+            <form string="Student Payment">
+                <sheet>
+                    <group>
+                        <field name="student_id"/>
+                        <field name="cycle"/>
+                        <field name="mounth"/>
+                        <field name="date"/>
+                        <field name="amount"/>
+                        <field name="state" readonly="1"/>
+                    </group>
+                    <group>
+                        <button string="Create Invoice" type="object" name="action_create_invoice" class="oe_highlight" 
+                                modifiers="{'invisible': [('state', '=', 'invoiced')]}"/>                  
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_payment_tree" model="ir.ui.view">
+        <field name="name">academic.payment.tree</field>
+        <field name="model">academic.payment</field>
+        <field name="arch" type="xml">
+            <tree string="Student Payments">
+                <field name="student_id"/>
+                <field name="cycle"/>
+                <field name="mounth"/>
+                <field name="amount"/>
+                <field name="date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_academic_payment" model="ir.actions.act_window">
+        <field name="name">Pagos</field>
+        <field name="res_model">academic.payment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_academic_payment"
+        name="Pago de mensualidad"
+        parent="menu_academic_acciones"
+        action="action_academic_payment"
+        sequence="10"/>
+</odoo>

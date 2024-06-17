@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="academic_aula_view_form" model="ir.ui.view">
+        <field name="name">academic.aula.form</field>
+        <field name="model">academic.aula</field>
+        <field name="arch" type="xml">
+            <form string="Aula">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="academic_aula_view_tree" model="ir.ui.view">
+        <field name="name">academic.aula.tree</field>
+        <field name="model">academic.aula</field>
+        <field name="arch" type="xml">
+            <tree string="Aula">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_academic_aula" model="ir.actions.act_window">
+        <field name="name">Aula</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">academic.aula</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_academic_aula"
+        name="Aulas"
+        parent="menu_academic_estructura"
+        action="action_academic_aula"
+        sequence="10"/>
+</odoo>

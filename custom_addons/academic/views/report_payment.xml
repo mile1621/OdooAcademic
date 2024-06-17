@@ -1,0 +1,38 @@
+<odoo>
+    <record id="view_academic_report_payment_form" model="ir.ui.view">
+        <field name="name">academic.report.payment.form</field>
+        <field name="model">academic.report.payment</field>
+        <field name="arch" type="xml">
+            <form string="Reporte de Pagos por Curso, Ciclo y Mes">
+                <group>
+                    <field name="curso_id"/>
+                    <field name="cycle"/>
+                    <field name="mounth"/>
+                </group>
+                <button name="%(action_report_course_payment)d" string="Imprimir Reporte" type="action" class="btn-secondary"/>
+                <group>
+                    <field name="student_ids">
+                        <tree string="Alumnos">
+                            <field name="student_id"/>
+                            <field name="has_paid"/>
+                        </tree>
+                    </field>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_academic_report_payment" model="ir.actions.act_window">
+        <field name="name">Reporte de Pagos por Curso, Ciclo y Mes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">academic.report.payment</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_academic_report_payment"
+    name="Reporte de pagos"
+    parent="menu_academic_documentos"
+    action="action_academic_report_payment"
+    sequence="10"/>
+</odoo>

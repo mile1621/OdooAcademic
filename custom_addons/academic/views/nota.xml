@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="academic_nota_view_form" model="ir.ui.view">
+        <field name="name">academic.nota.form</field>
+        <field name="model">academic.nota</field>
+        <field name="arch" type="xml">
+            <form string="Nota">
+                <sheet>
+                    <group>
+                        <field name="curso_id"/>
+                        <field name="materia_id"/>
+                        <field name="nro_bimestre"/>
+                        <field name="student_id"/>
+                        <field name="nota"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="academic_nota_view_tree" model="ir.ui.view">
+        <field name="name">academic.nota.tree</field>
+        <field name="model">academic.nota</field>
+        <field name="arch" type="xml">
+            <tree string="Nota">
+                <field name="curso_id"/>
+                <field name="materia_id"/>
+                <field name="nro_bimestre"/>
+                <field name="student_id"/>
+                <field name="nota"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_academic_nota" model="ir.actions.act_window">
+        <field name="name">Nota</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">academic.nota</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_academic_nota"
+        name="Subir notas"
+        parent="menu_academic_acciones"
+        action="action_academic_nota"
+        sequence="10"/>
+</odoo>

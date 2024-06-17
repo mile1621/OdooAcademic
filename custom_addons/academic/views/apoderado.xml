@@ -1,0 +1,49 @@
+<!-- views/apoderado.xml -->
+<odoo>
+    <record id="view_apoderado_form" model="ir.ui.view">
+        <field name="name">apoderado.form</field>
+        <field name="model">academic.apoderado</field>
+        <field name="arch" type="xml">
+            <form string="Apoderado">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="birth_date"/>
+                        <field name="gender"/>
+                        <field name="address"/>
+                        <field name="phone"/>
+                        <field name="email"/>
+                        <field name="student_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_apoderado_tree" model="ir.ui.view">
+        <field name="name">apoderado.tree</field>
+        <field name="model">academic.apoderado</field>
+        <field name="arch" type="xml">
+            <tree string="Apoderados">
+                <field name="name"/>
+                <field name="birth_date"/>
+                <field name="gender"/>
+                <field name="phone"/>
+                <field name="email"/>
+                <field name="student_ids"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_apoderado" model="ir.actions.act_window">
+        <field name="name">Apoderados</field>
+        <field name="res_model">academic.apoderado</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_academic_apoderado"
+        name="Apoderados"
+        parent="menu_academic_personas"
+        action="action_apoderado"
+        sequence="10"/>
+</odoo>

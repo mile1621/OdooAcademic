@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_boletin">
+        <t t-call="web.basic_layout">
+            <div class="page">
+                <h2>Boletín de Notas</h2>
+                <t t-foreach="docs" t-as="doc">
+                    <p>Nro Bimestre: <t t-esc="doc.nro_bimestre" /></p>
+                    <p>Estudiante: <t t-esc="doc.student_id.name" /></p>
+                    <p>Curso: <t t-esc="doc.curso_id.name" /></p>
+                    <p>Fecha: <t t-esc="doc.fecha" /></p>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Materia</th>
+                                <th>Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="doc.nota_ids" t-as="nota">
+                                <tr>
+                                    <td>
+                                        <t t-esc="nota.materia_id.name" />
+                                    </td>
+                                    <td>
+                                        <t t-esc="nota.nota" />
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                    <p>Nota Total: <t t-esc="doc.nota_total" /></p>
+                </t>
+            </div>
+        </t>
+    </template>
+    
+    <record id="action_report_boletin" model="ir.actions.report">
+        <field name='name'>Imprimir Boletin de Notas</field>
+        <field name='model'>academic.boletin</field>
+        <field name='report_type'>qweb-pdf</field>
+        <field name='report_name'>academic.report_boletin</field>
+        <field name='report_file'>academic.report_boletin</field>
+        <field name='print_report_name'>'report_boletin'</field>
+        <field name='binding_model_id' ref='model_academic_boletin' />
+        <field name='binding_type'>report</field>
+    </record>
+</odoo>

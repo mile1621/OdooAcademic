@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_course_payment">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <div class="page">
+                    <h2>Reporte de Pagos por Curso, Ciclo y Mes</h2>
+                    <p><strong>Curso:</strong> <t t-esc="doc.curso_id.name"/></p>
+                    <p><strong>Ciclo:</strong> <t t-esc="doc.cycle"/></p>
+                    <p><strong>Mes:</strong> <t t-esc="dict(doc.fields_get(['mounth'])['mounth']['selection'])[doc.mounth]"/></p>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Alumno</th>
+                                <th>Ha Pagado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="doc.student_ids" t-as="line">
+                                <tr>
+                                    <td><t t-esc="line.student_id.name"/></td>
+                                    <td>
+                                        <t t-if="line.has_paid">Si</t>
+                                        <t t-if="not line.has_paid">No</t>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+    
+    <record id="action_report_course_payment" model="ir.actions.report">
+        <field name='name'>Imprimir Reporte de pagos de mensualidad</field>
+        <field name='model'>academic.report.payment</field>
+        <field name='report_type'>qweb-pdf</field>
+        <field name='report_name'>academic.report_course_payment</field>
+        <field name='report_file'>academic.report_course_payment</field>
+        <field name='print_report_name'>'report_mounth_payment'</field>
+        <field name='binding_model_id' ref='model_academic_report_payment' />
+        <field name='binding_type'>report</field>
+    </record>
+</odoo>

@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+academic.access_academic_student,access_academic_student,academic.model_academic_student,base.group_user,1,1,1,1
+academic.access_academic_curso,access_academic_curso,academic.model_academic_curso,base.group_user,1,1,1,1
+academic.access_academic_materia,access_academic_materia,academic.model_academic_materia,base.group_user,1,1,1,1
+academic.access_academic_curso_materia,access_academic_curso_materia,academic.model_academic_curso_materia,base.group_user,1,1,1,1
+academic.access_academic_apoderado,access_academic_apoderado,academic.model_academic_apoderado,base.group_user,1,1,1,1
+academic.access_academic_aula,access_academic_aula,academic.model_academic_aula,base.group_user,1,1,1,1
+academic.access_academic_nota,access_academic_nota,academic.model_academic_nota,base.group_user,1,1,1,1
+academic.access_academic_payment,access_academic_payment,academic.model_academic_payment,base.group_user,1,1,1,1
+academic.access_academic_boletin,access_academic_boletin,academic.model_academic_boletin,base.group_user,1,1,1,1
+academic.access_academic_libreta,access_academic_libreta,academic.model_academic_libreta,base.group_user,1,1,1,1
+academic.access_academic_inscripcion,access_academic_inscripcion,academic.model_academic_inscripcion,base.group_user,1,1,1,1
+academic.access_academic_report_payment,access_academic_report_payment,academic.model_academic_report_payment,base.group_user,1,1,1,1
+academic.access_academic_report_payment_line,access_academic_report_payment_line,academic.model_academic_report_payment_line,base.group_user,1,1,1,1
