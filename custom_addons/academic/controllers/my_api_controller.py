@@ -531,7 +531,7 @@ class MyApiController(http.Controller):
     @http.route('/api/chatgpt', type='json', auth="none", methods=['POST'], csrf=False, cors="*")
     def chatgpt_query(self):
         try:
-            api_key = os.getenv("OPENAI_API_KEY")
+            api_key = "sk-proj-JKQLBlZD89HfuA6mptC5T3BlbkFJwcC7NKIArXs0A9l8WUVo"
             
             # Obtener los datos del cuerpo de la solicitud
             data = json.loads(request.httprequest.data)
