@@ -29,6 +29,8 @@
         'views/report_payment.xml',
         
         'security/ir.model.access.csv',
+        'data/academic.student.csv',
+        'data/academic.apoderado.csv',
     ],
     'installable': True,
     'application': True
