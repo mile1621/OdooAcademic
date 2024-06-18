@@ -10,3 +10,4 @@ class Curso(models.Model):
     materia_ids = fields.Many2many('academic.materia', 'curso_materia', 'curso_id', 'materia_id', string='Materias')
     inscription_ids = fields.One2many('academic.inscripcion', 'course_id', string='Inscripciones')
     report_ids = fields.One2many('academic.report.payment', 'curso_id', string='Reportes de Pagos')
+    lista_asistencia_ids = fields.One2many('academic.lista.asistencia', 'curso_id', string='Listas de Asistencia')

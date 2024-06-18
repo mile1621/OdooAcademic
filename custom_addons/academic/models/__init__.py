@@ -13,3 +13,5 @@ from . import mensualidad
 from . import report_payment
 from . import notice
 from . import res_users
+from . import lista_asistencia
+from . import asistencia_rel
