@@ -30,6 +30,7 @@
         'data/curso.xml',
         'data/materia.xml',
         'data/profesor.xml',
+        'data/aula.xml',
         
         'security/ir.model.access.csv',
         'data/academic.student.csv',

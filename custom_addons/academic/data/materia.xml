@@ -37,5 +37,11 @@
         <record id="materia_arte" model="academic.materia">
             <field name="name">Artes Plásticas</field>
         </record>
+        <record id="materia_religion" model="academic.materia">
+            <field name="name">Religión</field>
+        </record>
+        <record id="materia_guarani" model="academic.materia">
+            <field name="name">Guarani</field>
+        </record>
     </data>
 </odoo>
