@@ -1,0 +1,259 @@
+<odoo>
+    <data noupdate="1">
+        <record id="aula_10a" model="academic.aula">
+            <field name="name">10A</field>
+        </record>
+        <record id="aula_10b" model="academic.aula">
+            <field name="name">10B</field>
+        </record>
+        <record id="aula_11a" model="academic.aula">
+            <field name="name">11A</field>
+        </record>
+        <record id="aula_11b" model="academic.aula">
+            <field name="name">11B</field>
+        </record>
+        <record id="aula_12a" model="academic.aula">
+            <field name="name">12A</field>
+        </record>
+        <record id="aula_12b" model="academic.aula">
+            <field name="name">12B</field>
+        </record>
+        <record id="aula_13a" model="academic.aula">
+            <field name="name">13A</field>
+        </record>
+        <record id="aula_13b" model="academic.aula">
+            <field name="name">13B</field>
+        </record>
+        <record id="aula_14a" model="academic.aula">
+            <field name="name">14A</field>
+        </record>
+        <record id="aula_14b" model="academic.aula">
+            <field name="name">14B</field>
+        </record>
+        <record id="aula_15a" model="academic.aula">
+            <field name="name">15A</field>
+        </record>
+        <record id="aula_15b" model="academic.aula">
+            <field name="name">15B</field>
+        </record>
+        <record id="aula_16a" model="academic.aula">
+            <field name="name">16A</field>
+        </record>
+        <record id="aula_16b" model="academic.aula">
+            <field name="name">16B</field>
+        </record>
+        <record id="aula_17a" model="academic.aula">
+            <field name="name">17A</field>
+        </record>
+        <record id="aula_17b" model="academic.aula">
+            <field name="name">17B</field>
+        </record>
+        <record id="aula_18a" model="academic.aula">
+            <field name="name">18A</field>
+        </record>
+        <record id="aula_18b" model="academic.aula">
+            <field name="name">18B</field>
+        </record>
+        <record id="aula_19a" model="academic.aula">
+            <field name="name">19A</field>
+        </record>
+        <record id="aula_19b" model="academic.aula">
+            <field name="name">19B</field>
+        </record>
+        <record id="aula_20a" model="academic.aula">
+            <field name="name">20A</field>
+        </record>
+        <record id="aula_20b" model="academic.aula">
+            <field name="name">20B</field>
+        </record>
+        <record id="aula_21a" model="academic.aula">
+            <field name="name">21A</field>
+        </record>
+        <record id="aula_21b" model="academic.aula">
+            <field name="name">21B</field>
+        </record>
+        <record id="aula_22a" model="academic.aula">
+            <field name="name">22A</field>
+        </record>
+        <record id="aula_22b" model="academic.aula">
+            <field name="name">22B</field>
+        </record>
+        <record id="aula_23a" model="academic.aula">
+            <field name="name">23A</field>
+        </record>
+        <record id="aula_23b" model="academic.aula">
+            <field name="name">23B</field>
+        </record>
+        <record id="aula_24a" model="academic.aula">
+            <field name="name">24A</field>
+        </record>
+        <record id="aula_24b" model="academic.aula">
+            <field name="name">24B</field>
+        </record>
+        <record id="aula_25a" model="academic.aula">
+            <field name="name">25A</field>
+        </record>
+        <record id="aula_25b" model="academic.aula">
+            <field name="name">25B</field>
+        </record>
+        <record id="aula_26a" model="academic.aula">
+            <field name="name">26A</field>
+        </record>
+        <record id="aula_26b" model="academic.aula">
+            <field name="name">26B</field>
+        </record>
+        <record id="aula_27a" model="academic.aula">
+            <field name="name">27A</field>
+        </record>
+        <record id="aula_27b" model="academic.aula">
+            <field name="name">27B</field>
+        </record>
+        <record id="aula_28a" model="academic.aula">
+            <field name="name">28A</field>
+        </record>
+        <record id="aula_28b" model="academic.aula">
+            <field name="name">28B</field>
+        </record>
+        <record id="aula_29a" model="academic.aula">
+            <field name="name">29A</field>
+        </record>
+        <record id="aula_29b" model="academic.aula">
+            <field name="name">29B</field>
+        </record>
+        <record id="aula_30a" model="academic.aula">
+            <field name="name">30A</field>
+        </record>
+        <record id="aula_30b" model="academic.aula">
+            <field name="name">30B</field>
+        </record>
+        <record id="aula_31a" model="academic.aula">
+            <field name="name">31A</field>
+        </record>
+        <record id="aula_31b" model="academic.aula">
+            <field name="name">31B</field>
+        </record>
+        <record id="aula_32a" model="academic.aula">
+            <field name="name">32A</field>
+        </record>
+        <record id="aula_32b" model="academic.aula">
+            <field name="name">32B</field>
+        </record>
+        <record id="aula_33a" model="academic.aula">
+            <field name="name">33A</field>
+        </record>
+        <record id="aula_33b" model="academic.aula">
+            <field name="name">33B</field>
+        </record>
+        <record id="aula_34a" model="academic.aula">
+            <field name="name">34A</field>
+        </record>
+        <record id="aula_34b" model="academic.aula">
+            <field name="name">34B</field>
+        </record>
+        <record id="aula_35a" model="academic.aula">
+            <field name="name">35A</field>
+        </record>
+        <record id="aula_35b" model="academic.aula">
+            <field name="name">35B</field>
+        </record>
+        <record id="aula_36a" model="academic.aula">
+            <field name="name">36A</field>
+        </record>
+        <record id="aula_36b" model="academic.aula">
+            <field name="name">36B</field>
+        </record>
+        <record id="aula_37a" model="academic.aula">
+            <field name="name">37A</field>
+        </record>
+        <record id="aula_37b" model="academic.aula">
+            <field name="name">37B</field>
+        </record>
+        <record id="aula_38a" model="academic.aula">
+            <field name="name">38A</field>
+        </record>
+        <record id="aula_38b" model="academic.aula">
+            <field name="name">38B</field>
+        </record>
+        <record id="aula_39a" model="academic.aula">
+            <field name="name">39A</field>
+        </record>
+        <record id="aula_39b" model="academic.aula">
+            <field name="name">39B</field>
+        </record>
+        <record id="aula_40a" model="academic.aula">
+            <field name="name">40A</field>
+        </record>
+        <record id="aula_40b" model="academic.aula">
+            <field name="name">40B</field>
+        </record>
+        <record id="aula_41a" model="academic.aula">
+            <field name="name">41A</field>
+        </record>
+        <record id="aula_41b" model="academic.aula">
+            <field name="name">41B</field>
+        </record>
+        <record id="aula_42a" model="academic.aula">
+            <field name="name">42A</field>
+        </record>
+        <record id="aula_42b" model="academic.aula">
+            <field name="name">42B</field>
+        </record>
+        <record id="aula_43a" model="academic.aula">
+            <field name="name">43A</field>
+        </record>
+        <record id="aula_43b" model="academic.aula">
+            <field name="name">43B</field>
+        </record>
+        <record id="aula_44a" model="academic.aula">
+            <field name="name">44A</field>
+        </record>
+        <record id="aula_44b" model="academic.aula">
+            <field name="name">44B</field>
+        </record>
+        <record id="aula_45a" model="academic.aula">
+            <field name="name">45A</field>
+        </record>
+        <record id="aula_45b" model="academic.aula">
+            <field name="name">45B</field>
+        </record>
+        <record id="aula_46a" model="academic.aula">
+            <field name="name">46A</field>
+        </record>
+        <record id="aula_46b" model="academic.aula">
+            <field name="name">46B</field>
+        </record>
+        <record id="aula_47a" model="academic.aula">
+            <field name="name">47A</field>
+        </record>
+        <record id="aula_47b" model="academic.aula">
+            <field name="name">47B</field>
+        </record>
+        <record id="aula_48a" model="academic.aula">
+            <field name="name">48A</field>
+        </record>
+        <record id="aula_48b" model="academic.aula">
+            <field name="name">48B</field>
+        </record>
+        <record id="aula_49a" model="academic.aula">
+            <field name="name">49A</field>
+        </record>
+        <record id="aula_49b" model="academic.aula">
+            <field name="name">49B</field>
+        </record>
+        <record id="aula_50a" model="academic.aula">
+            <field name="name">50A</field>
+        </record>
+        <record id="aula_50b" model="academic.aula">
+            <field name="name">50B</field>
+        </record>
+        <record id="aula_lab" model="academic.aula">
+            <field name="name">Laboratorio</field>
+        </record>
+        <record id="aula_gima" model="academic.aula">
+            <field name="name">Gimnasio A</field>
+        </record>
+        <record id="aula_gimb" model="academic.aula">
+            <field name="name">Gimnasio B</field>
+        </record>
+    </data>
+</odoo>

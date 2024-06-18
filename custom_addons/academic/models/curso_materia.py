@@ -15,4 +15,4 @@ class CursoMateria(models.Model):
     @api.depends('curso_id', 'materia_id')
     def _compute_name(self):
         for rec in self:
-            rec.name = str(rec.curso_id.name) +" "+ str(rec.materia_id.name)
+            rec.name = str(rec.curso_id.name) +" - "+ str(rec.materia_id.name)

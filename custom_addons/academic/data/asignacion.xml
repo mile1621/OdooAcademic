@@ -1,0 +1,36 @@
+<odoo>
+    <data noupdate="1">
+        <record id="asignacion_1" model="academic.curso_materia">
+            <field name="curso_id" ref="curso_primero_prim"/>
+            <field name="materia_id" ref="materia_matematicas"/>
+            <field name="name">Primero Primaria - Matemáticas</field>
+            <field name="profesor_id" ref="employee_ngh"/>
+            <field name="schedule">L,M,V 7:00 - 7:45</field>
+            <field name="aula_id" ref="aula_11a"/>
+        </record>
+        <record id="asignacion_1" model="academic.curso_materia">
+            <field name="curso_id" ref="curso_primero_prim"/>
+            <field name="materia_id" ref="materia_lenguaje"/>
+            <field name="name">Primero Primaria - Lenguaje</field>
+            <field name="profesor_id" ref="employee_ngh"/>
+            <field name="schedule">L,M,V 7:00 - 7:45</field>
+            <field name="aula_id" ref="aula_11a"/>
+        </record>
+        <record id="asignacion_1" model="academic.curso_materia">
+            <field name="curso_id" ref="curso_primero_prim"/>
+            <field name="materia_id" ref="materia_matematicas"/>
+            <field name="name">Primero Primaria - Matemáticas</field>
+            <field name="profesor_id" ref="employee_ngh"/>
+            <field name="schedule">7:00 - 7:45</field>
+            <field name="aula_id" ref="aula_11a"/>
+        </record>
+        <record id="asignacion_1sm" model="academic.curso_materia">
+            <field name="curso_id" ref="curso_primero_sec"/>
+            <field name="materia_id" ref="materia_matematicas"/>
+            <field name="name">Primero Secundaria - Matemáticas</field>
+            <field name="profesor_id" ref="employee_jth"/>
+            <field name="schedule">7:00 - 7:45</field>
+            <field name="aula_id" ref="aula_11a"/>
+        </record>
+    </data>
+</odoo>

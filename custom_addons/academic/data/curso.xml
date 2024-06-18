@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="curso_nidito" model="academic.curso">
+            <field name="name">Nidito</field>
+        </record>
+        <record id="curso_primero_prim" model="academic.curso">
+            <field name="name">Primero Primaria</field>
+        </record>
+        <record id="curso_segundo_prim" model="academic.curso">
+            <field name="name">Segundo Primaria</field>
+        </record>
+        <record id="curso_tercero_prim" model="academic.curso">
+            <field name="name">Tercero Primaria</field>
+        </record>
+        <record id="curso_cuarto_prim" model="academic.curso">
+            <field name="name">Cuarto Primaria</field>
+        </record>
+        <record id="curso_quinto_prim" model="academic.curso">
+            <field name="name">Quinto Primaria</field>
+        </record>
+        <record id="curso_sexto_prim" model="academic.curso">
+            <field name="name">Sexto Primaria</field>
+        </record>
+        <record id="curso_primero_sec" model="academic.curso">
+            <field name="name">Primero Secundaria</field>
+        </record>
+        <record id="curso_segundo_sec" model="academic.curso">
+            <field name="name">Segundo Secundaria</field>
+        </record>
+        <record id="curso_tercero_sec" model="academic.curso">
+            <field name="name">Tercero Secundaria</field>
+        </record>
+        <record id="curso_cuarto_sec" model="academic.curso">
+            <field name="name">Cuarto Secundaria</field>
+        </record>
+        <record id="curso_quinto_sec" model="academic.curso">
+            <field name="name">Quinto Secundaria</field>
+        </record>
+        <record id="curso_sexto_sec" model="academic.curso">
+            <field name="name">Sexto Secundaria</field>
+        </record>
+    </data>
+</odoo>

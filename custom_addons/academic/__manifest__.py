@@ -27,8 +27,14 @@
         'views/libreta.xml',
         'views/boletin.xml',
         'views/report_payment.xml',
+        'data/curso.xml',
+        'data/materia.xml',
+        'data/profesor.xml',
+        'data/aula.xml',
         
         'security/ir.model.access.csv',
+        'data/academic.student.csv',
+        'data/academic.apoderado.csv',
     ],
     'installable': True,
     'application': True

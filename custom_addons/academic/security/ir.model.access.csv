@@ -12,3 +12,4 @@ academic.access_academic_libreta,access_academic_libreta,academic.model_academic
 academic.access_academic_inscripcion,access_academic_inscripcion,academic.model_academic_inscripcion,base.group_user,1,1,1,1
 academic.access_academic_report_payment,access_academic_report_payment,academic.model_academic_report_payment,base.group_user,1,1,1,1
 academic.access_academic_report_payment_line,access_academic_report_payment_line,academic.model_academic_report_payment_line,base.group_user,1,1,1,1
+academic.access_academic_notice,access_academic_notice,academic.model_academic_notice,base.group_user,1,1,1,1
