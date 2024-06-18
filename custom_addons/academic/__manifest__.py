@@ -27,6 +27,9 @@
         'views/libreta.xml',
         'views/boletin.xml',
         'views/report_payment.xml',
+        'data/curso.xml',
+        'data/materia.xml',
+        'data/profesor.xml',
         
         'security/ir.model.access.csv',
     ],
