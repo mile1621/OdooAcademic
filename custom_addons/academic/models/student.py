@@ -20,9 +20,10 @@ class Student(models.Model):
     apoderado_ids = fields.Many2many('academic.apoderado', string='Apoderados')
     nota_ids = fields.One2many('academic.nota', 'student_id', string='Notas')
     user_id = fields.Many2one('res.users', string='Usuario')
-    inscription_ids = fields.One2many('academic.inscripcion','student_id', string='Inscripciones')
-    report_line_ids = fields.One2many('academic.report.payment.line','student_id', string='Reportes de Pagos')
+    inscription_ids = fields.One2many('academic.inscripcion', 'student_id', string='Inscripciones')
+    report_line_ids = fields.One2many('academic.report.payment.line', 'student_id', string='Reportes de Pagos')
     notice_ids = fields.Many2many('academic.notice', string='Notices')
+    attendance_ids = fields.Many2many('academic.lista.asistencia', 'academic_asistencia_rel', 'student_id', 'lista_id', string='Asistencias')
 
     @api.model
     def create(self, vals):

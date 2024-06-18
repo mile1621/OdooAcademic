@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="materia_matematicas" model="academic.materia">
+            <field name="name">Matemáticas</field>
+        </record>
+        <record id="materia_lenguaje" model="academic.materia">
+            <field name="name">Lenguaje</field>
+        </record>
+        <record id="materia_ciencias" model="academic.materia">
+            <field name="name">Ciencias Naturales</field>
+        </record>
+        <record id="materia_sociales" model="academic.materia">
+            <field name="name">Ciencias Sociales</field>
+        </record>
+        <record id="materia_ingles" model="academic.materia">
+            <field name="name">Ingles</field>
+        </record>
+        <record id="materia_ed_fisica" model="academic.materia">
+            <field name="name">Educación Fisica</field>
+        </record>
+        <record id="materia_musica" model="academic.materia">
+            <field name="name">Musica</field>
+        </record>
+        <record id="materia_computacion" model="academic.materia">
+            <field name="name">Computación</field>
+        </record>
+        <record id="materia_fisica" model="academic.materia">
+            <field name="name">Física</field>
+        </record>
+        <record id="materia_quimica" model="academic.materia">
+            <field name="name">Quimica</field>
+        </record>
+        <record id="materia_psicologia" model="academic.materia">
+            <field name="name">Psicología</field>
+        </record>
+        <record id="materia_arte" model="academic.materia">
+            <field name="name">Artes Plásticas</field>
+        </record>
+    </data>
+</odoo>
