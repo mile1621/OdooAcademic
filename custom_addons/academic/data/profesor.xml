@@ -17,22 +17,6 @@
             <field name="color" eval="8"/>
         </record>
 
-        <!-- Contract Types -->
-        <record id="contract_type_permanent" model="hr.contract.type">
-            <field name="name">Permanent</field>
-            <field name="sequence">1</field>
-        </record>
-
-        <record id="contract_type_temporary" model="hr.contract.type">
-            <field name="name">Temporary</field>
-            <field name="sequence">2</field>
-        </record>
-
-        <record id="contract_type_interim" model="hr.contract.type">
-            <field name="name">Interim</field>
-            <field name="sequence">3</field>
-        </record>
-
         <!--Jobs-->
         <record id="job_profesor" model="hr.job">
             <field name="name">Profesor</field>
@@ -52,13 +36,6 @@
             <field name="description">Secretario, parte del departamento de administración</field>
         </record>
 
-       <!-- Work Locations -->
-      <record id="work_location_1" model="work.location">
-          <field name="name">Building 1, Second Floor</field>
-          <field name="location_type">office</field>
-          <field name="address_id" ref="base.main_partner"/>
-      </record>
-
     <!--Employees-->
         <record id="work_contact_ngh" model="res.partner">
             <field name="name">Jeffrey Kelly</field>
@@ -71,7 +48,7 @@
             <field name="department_id" ref="dep_education"/>
             <field name="job_id" ref="job_profesor"/>
             <field name="job_title">Profesor</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-264-7362</field>
             <field name="work_contact_id" ref="work_contact_ngh"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_ngh-image.jpg"/>
@@ -93,7 +70,7 @@
             <field name="private_email">demo@yourcompany.example.com</field>
             <field name="job_id" ref="job_profesor"/>
             <field name="job_title">Profesor</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">+3281813700</field>
             <field name="work_contact_id" ref="work_contact_qdp"/>
             <field name="create_date">2010-01-01 00:00:00</field>
@@ -110,7 +87,7 @@
             <field name="department_id" ref="dep_education"/>
             <field name="job_id" ref="job_profesor"/>
             <field name="job_title">Profesor</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-310-7863</field>
             <field name="work_contact_id" ref="work_contact_al"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_al-image.jpg"/>
@@ -128,7 +105,7 @@
             <field name="department_id" ref="dep_education"/>
             <field name="job_id" ref="job_profesor"/>
             <field name="job_title">Profesor</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-694-7266</field>
             <field name="work_contact_id" ref="work_contact_vad"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_vad-image.jpg"/>
@@ -147,7 +124,7 @@
             <field name="job_id" ref="job_profesor"/>
             <field name="job_title">Profesora</field>
             <field name="private_email">abigail.peterson33@example.com</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-233-3393</field>
             <field name="work_contact_id" ref="work_contact_hne"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_hne-image.jpg"/>
@@ -168,7 +145,7 @@
             <field name="job_title">Profesora</field>
             <field name="private_country_id" ref="base.us"/>
             <field name="private_email">Audrey.peterson2020@example.com</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-276-7903</field>
             <field name="work_contact_id" ref="work_contact_fpi"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_fpi-image.jpg"/>
@@ -186,7 +163,7 @@
             <field name="department_id" ref="dep_education"/>
             <field name="job_id" ref="job_profesor"/>
             <field name="job_title">Profesora</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-169-1352</field>
             <field name="work_contact_id" ref="work_contact_lur"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_lur-image.jpg"/>
@@ -204,7 +181,7 @@
             <field name="department_id" ref="dep_education"/>
             <field name="job_id" ref="job_profesor"/>
             <field name="job_title">Profesora</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-267-3735</field>
             <field name="work_contact_id" ref="work_contact_jod"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_jod-image.jpg"/>
@@ -222,7 +199,7 @@
             <field name="department_id" ref="dep_education"/>
             <field name="job_id" ref="job_profesor"/>
             <field name="job_title">Profesor</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-505-5146</field>
             <field name="work_contact_id" ref="work_contact_fme"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_fme-image.jpg"/>
@@ -242,7 +219,7 @@
             <field name="job_title">Consultant</field>
             <field name="private_country_id" ref="base.us"/>
             <field name="private_email">Doris.cole.LoveSong@example.com</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-331-5378</field>
             <field name="work_contact_id" ref="work_contact_jep"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_jep-image.jpg"/>
@@ -260,7 +237,7 @@
             <field name="department_id" ref="dep_education"/>
             <field name="job_id" ref="job_profesor"/>
             <field name="job_title">Profesor</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-518-8232</field>
             <field name="work_contact_id" ref="work_contact_jgo"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_jgo-image.jpg"/>
@@ -278,7 +255,7 @@
             <field name="department_id" ref="dep_education"/>
             <field name="job_id" ref="job_profesor"/>
             <field name="job_title">Profesor</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-707-8451</field>
             <field name="work_contact_id" ref="work_contact_jth"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_jth-image.jpg"/>
@@ -300,7 +277,7 @@
             <field name="private_country_id" ref="base.us"/>
             <field name="private_phone">(538)-672-3185</field>
             <field name="private_email">anita.oliver00@example.com</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-497-4804</field>
             <field name="work_contact_id" ref="work_contact_mit"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_mit-image.jpg"/>
@@ -318,7 +295,7 @@
             <field name="department_id" ref="dep_education"/>
             <field name="job_id" ref="job_profesor"/>
             <field name="job_title">Profesor</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-719-4182</field>
             <field name="work_contact_id" ref="work_contact_niv"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_niv-image.jpg"/>
@@ -336,7 +313,7 @@
             <field name="department_id" ref="dep_administrative"/>
             <field name="job_id" ref="job_secretario"/>
             <field name="job_title">Secretario</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-775-6660</field>
             <field name="work_contact_id" ref="work_contact_stw"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_stw-image.jpg"/>
@@ -354,7 +331,7 @@
             <field name="department_id" ref="dep_administrative"/>
             <field name="job_id" ref="job_secretario"/>
             <field name="job_title">Secretaria</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-363-8229</field>
             <field name="work_contact_id" ref="work_contact_chs"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_chs-image.jpg"/>
@@ -372,7 +349,7 @@
             <field name="department_id" ref="dep_administrative"/>
             <field name="job_id" ref="job_administrativo"/>
             <field name="job_title">Administrativo</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-262-1607</field>
             <field name="work_contact_id" ref="work_contact_jve"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_jve-image.jpg"/>
@@ -390,7 +367,7 @@
             <field name="department_id" ref="dep_administrative"/>
             <field name="job_id" ref="job_administrativo"/>
             <field name="job_title">Administrativo</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-912-1201</field>
             <field name="work_contact_id" ref="work_contact_han"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_han-image.jpg"/>
@@ -410,7 +387,7 @@
             <field name="job_title">Administrativo</field>
             <field name="private_country_id" ref="base.bo" />
             <field name="private_email">beth.evans@example.com</field>
-            <field name="work_location_id" ref="work_location_1"/>
+
             <field name="work_phone">(555)-532-3841</field>
             <field name="work_contact_id" ref="work_contact_jog"/>
             <field name="image_1920" type="base64" file="academic/static/img/employee_jog-image.jpg"/>
